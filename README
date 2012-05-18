@@ -1,0 +1,17 @@
+#sfBashCompletionPlugin#
+##Add bash completion for symfony to your system.##
+###Installation:###
+
+    $ ./symfony plugin:install sfBashCompletionPlugin
+This command will install the plugin.
+
+    $ sudo ./symfony bash:completion --system
+This command will add symfony hook to bash completion systemwide.
+**You need to restart terminal after this is done!**
+ 
+    $ ./symfony bash:completion
+This command will create a list of tasks defined in the local project.
+
+Done!
+
+If you will create new task in your project, just don't forget to run **./symfony bash:completion** to add it to completions list.
