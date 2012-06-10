@@ -29,16 +29,16 @@ EOF;
 				$this->logBlock('File "'.$options['path'].'" is already exist! If you realy whant to rewrite it use --force (-f) option', 'ERROR');
 			} else {
 				$script =
-<<<'BASH'
+'
 _symfony()
 {
 	if [ -f data/bash_completion ] ; then
 		source data/bash_completion
-		COMPREPLY=( $(_sumfony_local) )
+		COMPREPLY=( $(_symfony_local) )
 	fi
 }
 complete -F _symfony symfony
-BASH;
+';
 				if (file_put_contents($path,$script)) {
 					$this->logSection('+file', $path);
 					$this->logSection('Attention!', 'You need to restart terminal to complete this task');
@@ -63,8 +63,8 @@ BASH;
 			$names = strtr(implode(' ',  array_keys($tasks)),array(':'=>'\\\\\:'));
 			$opts = implode("\n", $tasks);
 			$script = 
-<<<'BASH'
-_sumfony_local()
+'
+_symfony_local()
 {
 	local cur
 	cur=${COMP_WORDS[COMP_CWORD]}
@@ -81,7 +81,7 @@ _sumfony_local()
 %s
 	esac
 }
-BASH;
+';
 			$script = sprintf($script,$names,$opts);
 			$path = $options['path'] ? $options['path'] : sfConfig::get('sf_data_dir').'/bash_completion';
 			file_put_contents($path, $script);
