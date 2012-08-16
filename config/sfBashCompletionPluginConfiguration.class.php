@@ -7,11 +7,11 @@
  * @subpackage  config
  * @author      Taras Bogach
  * @author      rozwell
- * @version     2.0.0-DEV
+ * @version     1.1.0
  */
 class sfBashCompletionPluginConfiguration extends sfPluginConfiguration
 {
-  const VERSION = '2.0.0-DEV';
+  const VERSION = '1.1.0';
 
   /**
    * @see sfPluginConfiguration
