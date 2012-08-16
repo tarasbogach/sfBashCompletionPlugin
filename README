@@ -19,3 +19,7 @@ This command will create a list of tasks defined in the local project.
 Done!
 
 If you will create new task in your project, just don't forget to run **./symfony bash:completion** to add it to completions list.
+
+
+github repository:
+https://github.com/tarasbogach/sfBashCompletionPlugin
