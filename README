@@ -5,10 +5,14 @@
     $ ./symfony plugin:install sfBashCompletionPlugin
 This command will install the plugin.
 
+    $ ./symfony bash:completion --user
+This command will add symfony hook to bash completion for current user only (~/.bashrc).
+**You need to restart terminal after this is done!**
+
     $ sudo ./symfony bash:completion --system
 This command will add symfony hook to bash completion systemwide.
 **You need to restart terminal after this is done!**
- 
+
     $ ./symfony bash:completion
 This command will create a list of tasks defined in the local project.
 

@@ -5,12 +5,13 @@
  * 
  * @package     sfBashCompletionPlugin
  * @subpackage  config
- * @author      Your name here
- * @version     SVN: $Id: PluginConfiguration.class.php 17207 2009-04-10 15:36:26Z Kris.Wallsmith $
+ * @author      Taras Bogach
+ * @author      rozwell
+ * @version     2.0.0-DEV
  */
 class sfBashCompletionPluginConfiguration extends sfPluginConfiguration
 {
-  const VERSION = '1.0.0-DEV';
+  const VERSION = '2.0.0-DEV';
 
   /**
    * @see sfPluginConfiguration
